@@ -2,6 +2,8 @@
 
 FotoFindur is a simple one-page application that enables the user to search for images by keyword via the Unsplash API. It was created in JavaScript using the Vue framework, which I had never used before.
 
+Visit https://fotofindur.herokuapp.com/ to view the live app.
+
 ## Goals
 
 * Demonstrate ability to learn a new framework or technology without guidance
