@@ -20,7 +20,21 @@ export default {
       photos: [
 
       ],
-      searchTerm: ''
+      searchTerm: '',
+      error: ''
+    }
+  },
+  methods: {
+    async getPhotos() {
+      const url = 'https://api.unsplash.com/search/photos?page=1&query=office';
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        this.photos = data;
+      } catch(error) {
+        this.error = error
+      }
+
     }
   }
 }
