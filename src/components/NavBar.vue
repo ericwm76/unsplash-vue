@@ -1,7 +1,7 @@
 <template>
   <nav id="nav-bar">
-    <h1 id="header">FotoFindur!</h1>
-    <h2 id="subheader">Find ur fotos!</h2>
+    <h1 id="header">FotoFindur</h1>
+    <h2 id="subheader">find ur fotos</h2>
     <form>
       <input v-model="searchTerm" type="text" placeholder="Search for photos here" />
       <button @click="handleSubmit">Submit</button>
@@ -29,18 +29,21 @@ export default {
 
 <style scoped>
 nav {
-  background-color: rgb(255, 234, 139);
+  background-color: rgb(212, 193, 109);
+  border-bottom: 3px solid lightgray;
   margin: 0;
+  padding: 20px;
 }
 
 #header {
   font-family: 'Pacifico', cursive;
-  margin: 0;
+  font-size: 4em;
+  margin: 10px;
 }
 
 #subheader {
   font-family: 'Quicksand', sans-serif;
-  margin: 0;
+  margin: 10px;
 }
 
 form {
@@ -50,6 +53,7 @@ form {
 }
 
 input {
+  background-color: antiquewhite;
   display: inline-block;
   height: 50px;
   margin: 0 20px;
@@ -57,6 +61,7 @@ input {
 }
 
 button {
+  background-color: steelblue;
   display: inline-block;
   height: 50px;
   margin: 0;
