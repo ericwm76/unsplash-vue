@@ -1,14 +1,14 @@
 <template>
-  <main id="main">
+  <main id="main-container">
     <div v-for="photo in photos" :key="photo.id">
-      <img v-bind:src="photo.urls.full" v-bind:alt="photo.alt_description" />
+      <img v-bind:src="photo.urls.small" v-bind:alt="photo.alt_description" />
     </div>
   </main>
 </template>
 
 <script>
 export default {
-  name: 'main',
+  name: 'MainContainer',
   props: {
     photos: Array
   }
