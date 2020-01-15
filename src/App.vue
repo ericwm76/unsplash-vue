@@ -26,7 +26,8 @@ export default {
   },
   methods: {
     async getPhotos() {
-      const url = 'https://api.unsplash.com/search/photos?page=1&query=office';
+      const apiKey = '2249e9c7aac95c641d68ecdef25d6803aca1a9ae16c60cbb8f61663fa27b2f8f'
+      const url = `https://api.unsplash.com/search/photos?page=1&query=${this.searchTerm}&client_id=${apiKey}`;
       try {
         const response = await fetch(url);
         const data = await response.json();
