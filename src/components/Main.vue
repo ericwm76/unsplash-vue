@@ -16,9 +16,20 @@ export default {
 </script>
 
 <style scoped>
+main {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 40% 40%;
+  padding: 10px;
+  margin: 0 10%;
+  width: 100%;
+}
 img {
-  height: 360px;
-  width: 480px;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 1px;
+  height: 270px;
+  width: 405px;
 }
 
 </style>
