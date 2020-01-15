@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <NavBar @update:searchTerm="updateSearchTerm"/>
-    <Main :photos="photos"/>
+    <MainContainer :photos="photos"/>
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-import Main from './components/Main.vue'
+import MainContainer from './components/Main.vue'
 
 export default {
   name: 'app',
   components: {
     NavBar,
-    Main
+    MainContainer
   },
   data() {
     return {
