@@ -18,7 +18,8 @@ export default {
     }
   },
   methods: {
-    handleSubmit() {
+    handleSubmit(e) {
+      e.preventDefault();
       this.$emit('update:searchTerm', this.searchTerm)
     }
   }
