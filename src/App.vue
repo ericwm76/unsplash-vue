@@ -31,7 +31,7 @@ export default {
     },
     async getPhotos(searchTerm) {
       const apiKey = '2249e9c7aac95c641d68ecdef25d6803aca1a9ae16c60cbb8f61663fa27b2f8f'
-      const url = `https://api.unsplash.com/search/photos?page=1&query=${searchTerm}&client_id=${apiKey}`;
+      const url = `https://api.unsplash.com/search/photos?page=1&query=${searchTerm}&client_id=${apiKey}&orientation=landscape`;
       try {
         const response = await fetch(url);
         const data = await response.json();
